@@ -2,6 +2,8 @@
 
 Minimal overhead, maximum control — a multi-agent orchestration framework that gets out of your way.
 
+> **93% token reduction** vs naive multi-agent approaches. Filesystem isolation eliminates file conflicts. Zero-LLM quality gates catch bad output before it costs you.
+
 <p align="center">
   <a href="https://pypi.org/project/orchestrator-team/"><img src="https://img.shields.io/pypi/v/orchestrator-team?color=blue" alt="PyPI"></a>
   <a href="https://www.npmjs.com/package/orchestrator-team"><img src="https://img.shields.io/npm/v/orchestrator-team?color=red" alt="npm"></a>
