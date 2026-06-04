@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "orchestrator-team"
+version = "3.0.0"
+description = "Lightweight multi-agent orchestration framework with physical isolation, task pre-check, and quality gates"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [
+    {name = "thefort827", email = "thefort827@gmail.com"}
+]
+keywords = ["multi-agent", "orchestration", "llm", "ai", "framework", "agentic"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.urls]
+Homepage = "https://github.com/thefort827/orchestrator-team"
+Documentation = "https://github.com/thefort827/orchestrator-team#readme"
+Repository = "https://github.com/thefort827/orchestrator-team"
+Issues = "https://github.com/thefort827/orchestrator-team/issues"
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "pytest-asyncio>=0.21"]
+
+[tool.setuptools.packages.find]
+include = ["orchestrator_team*"]

@@ -1,0 +1,31 @@
+{
+  "name": "orchestrator-team",
+  "version": "3.0.0",
+  "description": "Lightweight multi-agent orchestration framework — Python core + CLI",
+  "main": "cli/index.js",
+  "bin": {
+    "orchestrator-team": "cli/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Use Python tests: python -m pytest core/tests/\""
+  },
+  "keywords": [
+    "multi-agent",
+    "orchestration",
+    "llm",
+    "ai",
+    "framework",
+    "agentic",
+    "python"
+  ],
+  "author": "thefort827",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thefort827/orchestrator-team.git"
+  },
+  "homepage": "https://github.com/thefort827/orchestrator-team",
+  "engines": {
+    "node": ">=18"
+  }
+}

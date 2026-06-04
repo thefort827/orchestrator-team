@@ -1,0 +1,24 @@
+{
+  "name": "orchestrator-cli",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "orchestrator": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "commander": "^12.1",
+    "ink": "^5.0",
+    "react": "^18.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7",
+    "@types/react": "^18.3",
+    "tsx": "^4.19",
+    "typescript": "^5.6"
+  }
+}

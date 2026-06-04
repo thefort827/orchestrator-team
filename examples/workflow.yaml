@@ -1,0 +1,40 @@
+name: "simple-project"
+version: "1.0.0"
+description: "最简工作流示例"
+
+config:
+  max_parallelism: 3
+  budget:
+    max_tokens: 50000
+
+nodes:
+  - id: models
+    type: agent
+    config:
+      role: engineer
+      task: "定义User、Post、Comment三个数据模型"
+      output: "models.py"
+
+  - id: api
+    type: agent
+    config:
+      role: engineer
+      task: "开发RESTful API接口"
+      depends_on: [models]
+      output: "api.py"
+
+  - id: tests
+    type: agent
+    config:
+      role: tester
+      task: "编写API接口的单元测试"
+      depends_on: [api]
+      output: "test_api.py"
+
+edges:
+  - source: models
+    target: api
+    type: always
+  - source: api
+    target: tests
+    type: always
